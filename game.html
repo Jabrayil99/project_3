@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game | Jabrayil Goyushov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Jabrayil Goyushov</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="game.html" class="active">Game</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+    <h2>🐍 Snake Game</h2>
+    <p>Use arrow keys to control the snake. Eat the red food to grow. Don't hit the walls or yourself!</p>
+
+    <div class="game-wrapper">
+        <div class="game-score">Score: <span id="score">0</span> &nbsp;|&nbsp; High Score: <span id="highscore">0</span></div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="game-controls">
+            <button id="startBtn" onclick="startGame()">Start Game</button>
+            <button id="restartBtn" onclick="restartGame()" style="display:none;">Restart</button>
+        </div>
+        <div class="game-hint">Arrow keys to move &nbsp;|&nbsp; Works on desktop</div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Jabrayil Goyushov | SITE 1101</p>
+</footer>
+
+<script src="assets/js/game.js"></script>
+</body>
+</html>
