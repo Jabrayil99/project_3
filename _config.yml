@@ -1,0 +1,31 @@
+# Site settings
+title: "Jabrayil Goyushov"
+description: "Personal Portfolio Website"
+url: "https://jabrayilgoyushov.github.io"
+baseurl: "/Project3"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  projects:
+    output: true
